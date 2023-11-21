@@ -1,0 +1,16 @@
+/*****************************************************
+ * node_modules imports
+ *****************************************************/
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+/*****************************************************
+ * project imports
+ *****************************************************/
+@import 'variables';
+@import 'mixins';
+
+
+body {
+  background-color: $mainBgColor;
+  color: $mainTextColor;
+}

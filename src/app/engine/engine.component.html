@@ -1,0 +1,17 @@
+<div class="container-fluid text-center">
+    <div *ngIf="!didCrack ;else crack">
+    <div class="display-2 font-weight-bold mt-5">SQL Login</div>
+    <div class="d-flex">
+      <input dir="rtl" type="text" class="form-control mi-input" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="text" placeholder="שם" (input)="filterPepole()">
+      <label class="ml-5" for="exampleInputEmail1"></label>
+    </div>
+    <div *ngFor="let person of peopleFiltered">
+      <app-person [person]="person"></app-person>
+    </div>
+
+    <a *ngIf="isStupid" href="https://www.w3schools.com/sql/sql_injection.asp">מה את דפוק</a>
+  </div>
+  <ng-template #crack>
+    <img src="../../assets/images/hiccup_and_toothless.jpg">
+  </ng-template>
+</div>
