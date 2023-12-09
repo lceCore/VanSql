@@ -3,7 +3,7 @@
     <div class="title font-weight-bold mt-5">Vandonink Login</div>
     <a *ngIf="isStupid" href="https://www.w3schools.com/sql/sql_injection.asp">מה את דפוק</a>
     <div class="d-flex my-5">
-      <input dir="rtl" type="text" class="form-control mi-input" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="text" placeholder="שם" (input)="filterPepole()">
+      <input dir="rtl" type="text" class="form-control mi-input" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="text" placeholder="תפרוץ אליי" (input)="filterPepole()">
       <label class="ml-5" for="exampleInputEmail1"></label>
     </div>
     <div *ngFor="let person of peopleFiltered">
@@ -11,6 +11,8 @@
     </div>
   </div>
   <ng-template #crack>
-    <img src="assets/images/hiccup_and_toothless.jpg">
+    <div class="container cardo d-flex justify-content-center">
+      <app-note></app-note>
+    </div>
   </ng-template>
 </div>
